@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Grid</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grille-accueil">
+
+        <div class="menu">
+            <h2 class="titre-menu">Menu</h2>
+            <ul class="liste-menu">
+                <li class="item-nav"><a href="/">Accueil</a></li>
+                <li class="item-nav"><a href="/informations.html">Informations</a></li>
+                <li class="item-nav"><a href="/portfolio.html">Tous nos biens</a></li>
+                <li class="item-nav"><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="presentation">
+            <img src="ressources/logo-grec.svg" alt="temple grec">
+            <h1>Agence Héraclès</h1>
+            <p>Nous vous proposons des biens d'exceptions, de l'hôtel particulier au Château.</p>
+            <a href="./informations.html">En savoir plus</a>
+        </div>
+
+        <div class="slider">
+            <div class="container-slides">
+                <img src="ressources/img1Slide.jpg" class="active">
+                <img src="ressources/img2Slide.jpg">
+                <img src="ressources/img3Slide.jpg">
+            </div>
+            <div class="cont-btn">
+                <div class="btn-nav left">
+                    <img src="ressources/chevron-gauche.svg" alt="chevron gauche">
+                </div>
+                <div class="btn-nav right">
+                    <img src="ressources/chevron-droit.svg" alt="chevron droit">
+                </div>
+            </div>
+        </div>
+
+        <div class="choix">
+            <h2 class="titre-choix">
+                Des offres d'exception,<br>
+                à un prix imbattable.
+            </h2>
+            <p>Goutez à l'exception.</p>
+            <a href="./portfolio.html" class="go-galerie">Découvrez nos biens.</a>
+
+            <div class="cont-medias">
+                <div class="media">
+                    <a href="#">
+                        <img src="ressources/instagram.svg">
+                    </a>
+                </div>
+                <div class="media">
+                    <a href="#">
+                        <img src="ressources/twitter.svg">
+                    </a>
+                </div>
+                <div class="media">
+                    <a href="#">
+                        <img src="ressources/facebook.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>Envoyez<br>Nous un<br>Message</h3>
+            <a href="./contact.html" class="go-contact">
+                <img src="ressources/chevron-droit.svg" alt="chevron droit">
+            </a>
+        </div>
+    </div>
+
+
+    <script src="script/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+.titre-portfolio {
+  text-align: center;
+  font-size: 60px;
+  font-family: Playfair Display, serif;
+  margin: 70px 0 70px;
+  color: #000;
+}
+.grille-portfolio {
+  width: 90%;
+  max-width: 1700px;
+  min-width: 300px;
+  height: auto;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+}
+.grid-item {
+  height: 250px;
+  cursor: pointer;
+  position: relative;
+  margin: 30px 15px;
+}
+.grid-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.description {
+  position: absolute;
+  top: -25px;
+  left: 0px;
+  font-size: 18px;
+}
+.prix {
+  position: absolute;
+  top: -27px;
+  right: 0px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+  .grille-portfolio {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Slider */
+
+.slider-portfolio {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, #333, #000);
+  display: none;
+}
+.btn-fermer-slider {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-left,
+.btn-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-left {
+  left: 2%;
+}
+.btn-right {
+  right: 2%;
+}
+.btn-left img,
+.btn-right img {
+  width: 30px;
+  height: 30px;
+}
+
+.img-visible-slider {
+  width: 60%;
+  height: 700px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+  .btn-fermer-slider {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .btn-left,
+  .btn-right {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-left img,
+  .btn-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .img-visible-slider {
+      width: 95%;
+      height: 500px;
+  }
+}

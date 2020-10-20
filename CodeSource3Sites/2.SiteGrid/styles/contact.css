@@ -1,0 +1,158 @@
+body {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.titre-contact {
+  margin: 50px 0 20px;
+  text-align: center;
+  font-size: 60px;
+  color: #000;
+}
+.contact-sous-titre {
+  font-weight: lighter;
+  text-align: center;
+  margin: 10px 0 70px;
+}
+.trois-contacts {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 200px;
+  text-align: center;
+}
+.box span {
+  font-size: 20px;
+}
+.box img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 70px;
+}
+
+/* formulaire */
+
+form {
+  width: 900px;
+  margin: 100px auto 50px;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+form h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 20px;
+}
+.label-input {
+  display: block;
+  margin: 10px 0 10px 10px;
+  font-size: 20px;
+}
+.label-input:nth-child(1) {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  display: block;
+  width: 90%;
+  margin: 10px 10px 20px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+.titre-check {
+  display: inline;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.groupe-check {
+  display: inline;
+}
+.labels-check {
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  display: inline;
+  border: none;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+label[for="txt"] {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  margin: 30px 10px 20px;
+}
+textarea {
+  font-family: Open sans, Arial, Helvetica, sans-serif;
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin: 10px 10px 20px;
+  resize: none;
+  font-size: 18px;
+  padding: 18px;
+  border: 1px solid #000;
+}
+form button {
+  display: block;
+  margin: 10px auto 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .titre-contact {
+    margin: 30px 0 20px;
+    font-size: 40px;
+  }
+  .contact-sous-titre {
+    margin: 0 20px 20px;
+    font-size: 16px;
+  }
+  .trois-contacts {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .box {
+    margin: 20px 0;
+  }
+  .box img {
+    width: 50px;
+  }
+  form {
+    width: 90%;
+    margin: 80px auto 50px;
+  }
+  form h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 30px;
+  }
+  .groupe-check {
+    display: block;
+    margin: 10px 0 10px 10px;
+    font-size: 20px;
+  }
+  textarea {
+    width: 80%;
+  }
+  input[type="text"],
+  input[type="number"] {
+    width: 80%;
+  }
+}
